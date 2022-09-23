@@ -16,14 +16,34 @@
         </script>
     </head>
     <body>
+        <!-- intro -->
         <p class="hello">Hello world!</p>
         <p class="dustin">I'm Dustin. I like computers.</p>
         <!-- social media links -->
-        <p><a href="https://www.linkedin.com/in/dustin-gallo-098669200/" class="fa fa-linkedin"></a></p>
         <p><a href="https://github.com/gallodustin" class="fa fa-github"></a></p>
+        <p><a href="https://www.linkedin.com/in/dustin-gallo-098669200/" class="fa fa-linkedin"></a></p>
         <!-- image -->
         <p><img src="dustino.jpg" alt="Dustin hiding behind flowers" width="150" height="200"></p>
-		<p class="dustin">Page views:</p>
-        <script type="text/javascript" src="http://services.webestools.com/cpt_pages_views/73907-1-7.js"></script>
+        <!-- mini resume -->
+        <p class="hello">Experience</p>
+        <ul>
+            <li class="dustin">Software Engineer, <a href="https://datachat.ai/">DataChat</a>, 2022-[current]</li>
+            <li class="dustin">Technical Solutions Engineer, <a href="https://www.epic.com/">Epic Systems</a>, 2015-2021</li>
+        </ul>
+        <p class="hello">Education</p>
+        <ul>
+            <li class="dustin">MS Computer Science, <a href="https://www.cs.wisc.edu/">University of Wisconsin-Madison</a>, 2021</li>
+            <li class="dustin">BA Mathematical Economic Analysis, <a href="https://economics.rice.edu/">Rice University</a>, 2013</li>
+        </ul>
+        <!-- copyright -->
+        <div id="copyright"></div>
+        <script>
+            const cr = `
+                <p class="dustin">
+                    &copy; ${new Date().getFullYear()} Dustin Gallo
+                </p>
+            `;
+            document.getElementById('copyright').innerHTML = cr;
+        </script>
     </body>
 </html>
